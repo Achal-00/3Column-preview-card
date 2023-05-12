@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 8%;
+}
+
+.sedan-section {
+    padding: 10% 20%;
+    background-color: hsl(31, 77%, 52%);
+    display: grid;
+    grid-template-columns: 1fr;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+.image-holder img {
+    width: 25%;
+}
+
+.header {
+    margin-top: 5%;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 0;
+}
+
+.content {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 2em;
+}
+
+.btn button {
+    width: 60%;
+    height: 3em;
+    border: none;
+    border-radius: 3em;
+    font-size: 3vw;
+    font-family: font-family: 'Lexend Deca', sans-serif;
+    line-height: 0;
+    font-weight: 700;
+}
+
+.sedan-section .btn button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv-section .btn button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-section .btn button {
+    color: hsl(179, 100%, 13%);
+}
+
+.suv-section {
+    padding: 10% 20%;
+    background-color: hsl(184, 100%, 22%);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.luxury-section {
+    padding: 10% 20%;
+    background-color: hsl(179, 100%, 13%);
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+.sedan-section .btn button:hover {
+    background-color: hsl(31, 77%, 52%);
+    border: 5px solid hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.suv-section .btn button:hover {
+    background-color: hsl(184, 100%, 22%);
+    border: 5px solid hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury-section .btn button:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: 5px solid hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media screen and (min-width: 450px) {
+    body {
+        display: grid;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .wrapper {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 60%;
+    }
+
+    .image-holder img {
+        width: 30%;
+        height: 100%;
+    }
+
+    .sedan-section {
+        padding: 10% 20%;
+        background-color: hsl(31, 77%, 52%);
+        display: grid;
+        grid-template-columns: 1fr;
+        border-top-left-radius: 3%;
+        border-bottom-left-radius: 3%;
+        border-top-right-radius: 0;
+    }
+
+    .suv-section {
+        padding: 10% 20%;
+        background-color: hsl(184, 100%, 22%);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .luxury-section {
+        padding: 10% 20%;
+        background-color: hsl(179, 100%, 13%);
+        display: grid;
+        grid-template-columns: 1fr;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 3%;
+        border-top-right-radius: 3%;
+    }
+
+    .header {
+        color: hsl(0, 0%, 95%);
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700;
+        font-size: 3vh;
+        line-height: 100%;
+    }
+
+    .content {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 1vw;
+        font-family: 'Lexend Deca', sans-serif;
+        margin-bottom: 2em;
+        font-weight: 400;
+        padding-bottom: 3em;
+    }
+
+    .btn button {
+        width: 70%;
+        height: 3em;
+        border: none;
+        border-radius: 3em;
+        font-size: 1vw;
+        padding: 1em;
+        color: hsl(31, 77%, 52%);
+        font-family: 'Lexend Deca', sans-serif;
+        line-height: 0;
+        font-weight: 400;
+    }
+
+    .sedan-section .btn button:hover {
+        border: 2px solid hsl(0, 0%, 95%);
+    }
+
+    .suv-section .btn button:hover {
+        border: 2px solid hsl(0, 0%, 95%);
+    }
+
+    .luxury-section .btn button:hover {
+        border: 2px solid hsl(0, 0%, 95%);
+    }
+}
